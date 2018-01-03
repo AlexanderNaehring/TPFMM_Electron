@@ -131,6 +131,12 @@ a {
   flex: 1 0;
 }
 
+.content > section {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
 footer {
   flex: 0 0 50px;
   margin-top: 5px;
