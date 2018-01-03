@@ -1,0 +1,22 @@
+{
+  "name": "tpfmm",
+  "productName": "Transport Fever Mod Manager",
+  "version": "1.0.0",
+  "description": "Mod Manager for the game Transport Fever by Urban Games",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/AlexanderNaehring/eTPFMM",
+  "keywords": [
+    "Transport Fever",
+    "Mods",
+    "Game",
+    "Mod Manager"
+  ],
+  "author": "Alexander Naehring <contact@alexandernaehring.eu>",
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}

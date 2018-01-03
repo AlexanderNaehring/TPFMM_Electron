@@ -1,0 +1,131 @@
+@import "font/font.css";
+
+* {
+  box-sizing: border-box;
+}
+html  {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  min-width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  font-family: 'Roboto', sans-serif;
+}
+body  {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  min-width: 100%;
+  height: 100%;
+  font-size: 1em;
+  /* min-height: 100%; */
+  background: #2a3342;
+  color: #ffffff;
+  position: relative;
+  z-index:1;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*############################################################################*/
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bar {
+  flex: 0 0 100px;
+  overflow: hidden;
+  background-color: rgba(47, 71, 99, 1);
+  border-right: 5px solid rgba(130, 155, 175, 1);
+  height: 100%;
+  text-transform: uppercase;
+  font-stretch: semi-condensed;
+}
+.nav-bar ul {
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.nav-bar ul li {
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  transition: background-color .5s;
+}
+.nav-bar ul li a {
+  display: block;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  transform: translate(0);
+  transition: transform 0.1s;
+}
+.nav-bar ul li a svg {
+  display: block;
+  position: relative;
+  width: 40px;
+  margin: 5px auto;
+  fill: none;
+  stroke: white;
+  stroke-width: 3px;
+}
+.nav-bar ul li a span {
+  display: block;
+  width: 64px;
+  margin: 0px auto;
+  text-align: center;
+  transform: translate(-200px);
+  transition: 0.2s;
+}
+/* move text in view when ul:hover */
+.nav-bar ul:hover li a span {
+  transform: translate(0);
+}
+/* move "button" down when a:hover */
+.nav-bar ul li a:hover {
+  transform: translateY(3px);
+}
+.nav-bar ul li a.active {
+  background-color: rgb(130, 155, 175);
+  color: #2a3342;
+  font-weight: bold;
+}
+.nav-bar ul li a.active svg {
+  stroke: #2a3342;
+}
+.nav-bar ul li a.active span {
+  transform: translate(0);
+}
+
+.main {
+  width: auto;
+  flex: 1 0;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0;
+}
+
+footer {
+  flex: 0 0 50px;
+  margin-top: 5px;
+  border-top: 1px solid rgb(130, 155, 175);
+  padding-top: 5px;
+}
+
+/*############################################################################*/
+
+
+@media(min-width: 768px)  {
+}
