@@ -100,22 +100,22 @@ a {
   cursor: inherit;
 }
 /* move text in view when ul:hover */
-.nav-bar ul:hover li a span {
+.nav-bar:hover ul li a span {
   transform: translate(0);
 }
 /* move "button" down when a:hover */
 .nav-bar ul li a:hover {
   transform: translateY(3px);
 }
-.nav-bar ul li a.active {
+.nav-bar ul li.active {
   background-color: rgb(130, 155, 175);
   color: #2a3342;
   font-weight: bold;
 }
-.nav-bar ul li a.active svg {
+.nav-bar ul li.active svg {
   stroke: #2a3342;
 }
-.nav-bar ul li a.active span {
+.nav-bar ul li.active span {
   transform: translate(0);
 }
 
