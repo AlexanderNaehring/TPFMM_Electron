@@ -29,6 +29,15 @@ a {
   color: inherit;
   text-decoration: none;
 }
+:not(input):not(textarea),
+:not(input):not(textarea)::after,
+:not(input):not(textarea)::before {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    cursor: default;
+}
 
 /*############################################################################*/
 
@@ -76,6 +85,10 @@ a {
   fill: none;
   stroke: white;
   stroke-width: 3px;
+  cursor: inherit;
+}
+.nav-bar ul li a svg path {
+  cursor: inherit;
 }
 .nav-bar ul li a span {
   display: block;
@@ -84,6 +97,7 @@ a {
   text-align: center;
   transform: translate(-200px);
   transition: 0.2s;
+  cursor: inherit;
 }
 /* move text in view when ul:hover */
 .nav-bar ul:hover li a span {
