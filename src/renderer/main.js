@@ -2,6 +2,7 @@
 
 'use strict';
 const electron = require('electron');
+const fs = require('fs');
 
 // https://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined
 window.$ = window.jQuery = require('jQuery');
@@ -24,6 +25,11 @@ $(document).ready(() => {
 
 
   /* Setup routine */
+
+  // load icons
+  fs.readFile('src/img/icons.svg', 'utf8', (err, data) => {
+    $('#icons').html(data);
+  });
 
   // start: activate mods tab
   $('.nav-bar a[href="#mods"]').click();
