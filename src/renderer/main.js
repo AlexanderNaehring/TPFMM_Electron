@@ -26,6 +26,19 @@ $(document).ready(() => {
 
   /* Setup routine */
 
+  // load nav-bar
+  let navEntries = require('../res/nav-bar.json');
+  // using some sort of template... e.g. <template>, or string in js...
+  // https://stackoverflow.com/questions/18673860/defining-a-html-template-to-append-using-jquery
+  const navTemplate = ({ name, text }) => `
+    <li>
+      <a href='#${name}'>
+        <svg><use xlink:href='#icon-${name}' /></svg>
+        <span>${text}</span>
+      </a>
+    </li>`;
+  $('.nav-bar ul').html(navEntries.map(navTemplate).join(''));
+
   // load icons
   fs.readFile('src/img/icons.svg', 'utf8', (err, data) => {
     $('#icons').html(data);

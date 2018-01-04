@@ -1,0 +1,22 @@
+[
+  {
+    "name": "mods",
+    "text": "Mods"
+  },
+  {
+    "name": "maps",
+    "text": "Maps"
+  },
+  {
+    "name": "online",
+    "text": "Online"
+  },
+  {
+    "name": "backups",
+    "text": "Backups"
+  },
+  {
+    "name": "settings",
+    "text": "Settings"
+  }
+]
