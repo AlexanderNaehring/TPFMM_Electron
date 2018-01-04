@@ -1,22 +1,27 @@
 [
   {
     "name": "mods",
-    "text": "Mods"
+    "text": "Mods",
+    "file": "mods.html"
   },
   {
     "name": "maps",
-    "text": "Maps"
+    "text": "Maps",
+    "file": "maps.html"
   },
   {
     "name": "online",
-    "text": "Online"
+    "text": "Online",
+    "file": "online.html"
   },
   {
     "name": "backups",
-    "text": "Backups"
+    "text": "Backups",
+    "file": "backups.html"
   },
   {
     "name": "settings",
-    "text": "Settings"
+    "text": "Settings",
+    "file": "settings.html"
   }
 ]
