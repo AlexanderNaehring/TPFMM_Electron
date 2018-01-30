@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/AlexanderNaehring/eTPFMM",
+  "repository": "https://github.com/AlexanderNaehring/TPFMM_Electron",
   "keywords": [
     "Transport Fever",
     "Mods",
