@@ -107,6 +107,9 @@ hidden {
 .nav-bar:hover ul li a span {
   transform: translate(0);
 }
+.nav-bar ul li a svg {
+  transition: 0.2s;
+}
 /* move "button" down when a:hover */
 .nav-bar ul li a:hover {
   transform: translateY(3px);

@@ -17,13 +17,17 @@ $(document).ready(() => {
   // using some sort of template... e.g. <template>, or string in js...
   // https://stackoverflow.com/questions/18673860/defining-a-html-template-to-append-using-jquery
   const navTemplate = ({ name, text }) => `
-    <li>
+    <li id='nav-${name}'>
       <a href='#${name}'>
         <svg><use xlink:href='#icon-${name}' /></svg>
         <span>${text}</span>
       </a>
     </li>`;
   $('.nav-bar ul').html(navEntries.map(navTemplate).join(''));
+
+  // nav-bar colors
+  const navBarColorTemplate = ({name, color}) => `.nav-bar:hover ul li#nav-${name} svg {stroke: ${color};}\n`;
+  $("style").append(navEntries.map(navBarColorTemplate).join(''));
 
   // load icons (async)
   fs.readFile('src/img/icons.svg', 'utf8', (err, data) => {
@@ -49,12 +53,13 @@ $(document).ready(() => {
   $('.nav-bar a').click( function () {
     // make tab active (li)
     $('.nav-bar li').removeClass('active');
-    $(this).parent().addClass('active');
+    $(this).parent('.nav-bar li').addClass('active');
 
     // show content
     $('.content > section:visible').hide();
     $($(this).attr('href')).show();
   });
+
 
 
 

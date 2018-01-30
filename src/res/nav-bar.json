@@ -2,26 +2,31 @@
   {
     "name": "mods",
     "text": "Mods",
+    "color": "CHARTREUSE",
     "file": "mods.html"
   },
   {
     "name": "maps",
     "text": "Maps",
+    "color": "aquamarine",
     "file": "maps.html"
   },
   {
     "name": "online",
     "text": "Online",
+    "color": "violet",
     "file": "online.html"
   },
   {
     "name": "backups",
     "text": "Backups",
+    "color": "goldenrod",
     "file": "backups.html"
   },
   {
     "name": "settings",
     "text": "Settings",
+    "color": "tomato",
     "file": "settings.html"
   }
 ]
